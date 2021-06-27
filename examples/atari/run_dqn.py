@@ -18,9 +18,9 @@
 from absl import app
 from absl import flags
 import acme
-from acme.agents.tf import dqn
+from acme.agents.jax import dqn
 import helpers
-from acme.tf import networks
+from acme.jax import networks
 
 flags.DEFINE_string('level', 'PongNoFrameskip-v4', 'Which Atari level to play.')
 flags.DEFINE_integer('num_episodes', 1000, 'Number of episodes to train for.')

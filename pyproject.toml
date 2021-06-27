@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "acme"
+version = "0.1.0"
+description = ""
+authors = ["Ethan Brooks <ethanabrooks@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+dm-reverb-nightly = "^0.3.0-alpha.20210627"
+tfp-nightly = "^0.14.0-alpha.20210627"
+tf-nightly = "^2.7.0-alpha.20210627"
+jaxlib = {url = "https://storage.googleapis.com/jax-releases/cuda112/jaxlib-0.1.65+cuda112-cp38-none-manylinux2010_x86_64.whl"}
+jax = "^0.2.16"
+
+[tool.poetry.dev-dependencies]
+ipython = "^7.25.0"
+ipdb = "^0.13.9"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
